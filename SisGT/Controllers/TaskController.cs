@@ -9,7 +9,8 @@ namespace SisGT.Controllers
 {
     internal class TaskController
     {
-        private readonly string DataPath = Environment.CurrentDirectory + "/data.txt";
+        private readonly string DirectoryPath = @"c:\Temp";
+        private readonly string DataPath = @"c:\Temp\dataTask.txt";
         internal List<TaskModel> Tasks { get; set; }
 
         internal bool Create(TaskModel task)
@@ -46,10 +47,13 @@ namespace SisGT.Controllers
         {
             try
             {
-                if (!File.Exists(DataPath))
+                Tasks = new List<TaskModel>();
+
+                if (!Directory.Exists(DirectoryPath))
                 {
-                    File.Create(DataPath).Close();
-                    Tasks = new List<TaskModel>();
+                    Directory.CreateDirectory(DirectoryPath);
+                    if (!File.Exists(DataPath))
+                        File.Create(DataPath).Close();
                     return Tasks;
                 }
                 else
@@ -73,15 +77,22 @@ namespace SisGT.Controllers
 
         internal TaskModel ReadId(int id = 0)
         {
-            Read();
-
-            if (Tasks.Count > 0 && id != 0)
+            try
             {
-                int count = 0;
-                while (Tasks[count].Id != id && count < Tasks.Count) 
-                    count++;
+                Read();
 
-                return count != Tasks.Count ? Tasks[count] : new TaskModel();
+                if (Tasks.Count > 0 && id != 0)
+                {
+                    int count = 0;
+                    while (Tasks[count].Id != id && count < Tasks.Count)
+                        count++;
+
+                    return count != Tasks.Count ? Tasks[count] : new TaskModel();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
             }
             return new TaskModel();
         }

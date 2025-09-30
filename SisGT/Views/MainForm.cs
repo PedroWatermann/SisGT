@@ -11,7 +11,7 @@ namespace SisGT.Views
 {
     public partial class MainForm : Form
     {
-        private readonly List<string> filterOptions = new List<string>() { "Título", "Descrição", "Status" };
+        private readonly List<string> filterOptions = new List<string>() { "Título", "Descrição", "Concluída" };
         private int? LastFilter = null;
         private string LastTextFilter = "";
         private bool? LastStatus = null;

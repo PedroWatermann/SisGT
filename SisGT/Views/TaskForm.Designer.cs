@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskForm));
             this.tlpBorder = new System.Windows.Forms.TableLayoutPanel();
             this.tlpGeneral = new System.Windows.Forms.TableLayoutPanel();
-            this.gbxTitle = new System.Windows.Forms.GroupBox();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.ckbStatus = new System.Windows.Forms.CheckBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.gbxDescription = new System.Windows.Forms.GroupBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
+            this.gbxTitle = new System.Windows.Forms.GroupBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.ckbStatus = new System.Windows.Forms.CheckBox();
             this.tlpBorder.SuspendLayout();
             this.tlpGeneral.SuspendLayout();
-            this.gbxTitle.SuspendLayout();
             this.gbxDescription.SuspendLayout();
+            this.gbxTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpBorder
@@ -79,48 +79,6 @@
             this.tlpGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tlpGeneral.Size = new System.Drawing.Size(492, 292);
             this.tlpGeneral.TabIndex = 0;
-            // 
-            // gbxTitle
-            // 
-            this.tlpGeneral.SetColumnSpan(this.gbxTitle, 3);
-            this.gbxTitle.Controls.Add(this.txtTitle);
-            this.gbxTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbxTitle.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxTitle.ForeColor = System.Drawing.Color.Black;
-            this.gbxTitle.Location = new System.Drawing.Point(3, 3);
-            this.gbxTitle.Name = "gbxTitle";
-            this.gbxTitle.Size = new System.Drawing.Size(486, 49);
-            this.gbxTitle.TabIndex = 0;
-            this.gbxTitle.TabStop = false;
-            this.gbxTitle.Text = "Título";
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.BackColor = System.Drawing.Color.FloralWhite;
-            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTitle.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(54)))), ((int)(((byte)(33)))));
-            this.txtTitle.Location = new System.Drawing.Point(3, 21);
-            this.txtTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(480, 18);
-            this.txtTitle.TabIndex = 0;
-            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
-            // 
-            // ckbStatus
-            // 
-            this.ckbStatus.AutoSize = true;
-            this.ckbStatus.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ckbStatus.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ckbStatus.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbStatus.ForeColor = System.Drawing.Color.Black;
-            this.ckbStatus.Location = new System.Drawing.Point(3, 255);
-            this.ckbStatus.Name = "ckbStatus";
-            this.ckbStatus.Size = new System.Drawing.Size(82, 34);
-            this.ckbStatus.TabIndex = 3;
-            this.ckbStatus.Text = "Status";
-            this.ckbStatus.UseVisualStyleBackColor = true;
             // 
             // btnConfirm
             // 
@@ -179,6 +137,48 @@
             this.txtDescription.Size = new System.Drawing.Size(480, 167);
             this.txtDescription.TabIndex = 1;
             // 
+            // gbxTitle
+            // 
+            this.tlpGeneral.SetColumnSpan(this.gbxTitle, 3);
+            this.gbxTitle.Controls.Add(this.txtTitle);
+            this.gbxTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbxTitle.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxTitle.ForeColor = System.Drawing.Color.Black;
+            this.gbxTitle.Location = new System.Drawing.Point(3, 3);
+            this.gbxTitle.Name = "gbxTitle";
+            this.gbxTitle.Size = new System.Drawing.Size(486, 49);
+            this.gbxTitle.TabIndex = 0;
+            this.gbxTitle.TabStop = false;
+            this.gbxTitle.Text = "Título";
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTitle.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(54)))), ((int)(((byte)(33)))));
+            this.txtTitle.Location = new System.Drawing.Point(3, 21);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(480, 18);
+            this.txtTitle.TabIndex = 0;
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
+            // 
+            // ckbStatus
+            // 
+            this.ckbStatus.AutoSize = true;
+            this.ckbStatus.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ckbStatus.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ckbStatus.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbStatus.ForeColor = System.Drawing.Color.Black;
+            this.ckbStatus.Location = new System.Drawing.Point(3, 255);
+            this.ckbStatus.Name = "ckbStatus";
+            this.ckbStatus.Size = new System.Drawing.Size(109, 34);
+            this.ckbStatus.TabIndex = 3;
+            this.ckbStatus.Text = "Concluída";
+            this.ckbStatus.UseVisualStyleBackColor = true;
+            // 
             // TaskForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -197,10 +197,10 @@
             this.tlpBorder.ResumeLayout(false);
             this.tlpGeneral.ResumeLayout(false);
             this.tlpGeneral.PerformLayout();
-            this.gbxTitle.ResumeLayout(false);
-            this.gbxTitle.PerformLayout();
             this.gbxDescription.ResumeLayout(false);
             this.gbxDescription.PerformLayout();
+            this.gbxTitle.ResumeLayout(false);
+            this.gbxTitle.PerformLayout();
             this.ResumeLayout(false);
 
         }
