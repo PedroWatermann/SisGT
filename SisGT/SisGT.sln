@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisGT", "SisGT.csproj", "{3
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SisGTSetup", "..\SisGTSetup\SisGTSetup.vdproj", "{B71C3155-E0BA-70DD-7585-0D7007FBF360}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisGTTest", "..\SisGTTest\SisGTTest.csproj", "{DCC325CC-DB6E-4643-8D17-0A66880AD6BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{3D283C5D-509F-41A3-A080-41EE350D9CB2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B71C3155-E0BA-70DD-7585-0D7007FBF360}.Debug|Any CPU.ActiveCfg = Debug
 		{B71C3155-E0BA-70DD-7585-0D7007FBF360}.Release|Any CPU.ActiveCfg = Release
+		{DCC325CC-DB6E-4643-8D17-0A66880AD6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC325CC-DB6E-4643-8D17-0A66880AD6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC325CC-DB6E-4643-8D17-0A66880AD6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC325CC-DB6E-4643-8D17-0A66880AD6BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

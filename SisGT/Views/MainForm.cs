@@ -205,6 +205,9 @@ namespace SisGT.Views
         private void btnFilter_Click(object sender, EventArgs e)
         {
             cbxFilter.SelectedIndex = -1;
+            LastFilter = null;
+            LastTextFilter = "";
+            LastStatus = null;
             LoadTasks(null);
         }
 

@@ -7,13 +7,13 @@ using System.Text.Json;
 
 namespace SisGT.Controllers
 {
-    internal class TaskController
+    public class TaskController
     {
         private readonly string DirectoryPath = @"c:\Temp";
-        private readonly string DataPath = @"c:\Temp\dataTask.txt";
-        internal List<TaskModel> Tasks { get; set; }
+        private readonly string DataPath = @"c:\Temp\dataTask.json";
+        public List<TaskModel> Tasks { get; set; }
 
-        internal bool Create(TaskModel task)
+        public bool Create(TaskModel task)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace SisGT.Controllers
             return false;
         }
 
-        internal List<TaskModel> Read()
+        public List<TaskModel> Read()
         {
             try
             {
@@ -75,7 +75,7 @@ namespace SisGT.Controllers
             }
         }
 
-        internal TaskModel ReadId(int id = 0)
+        public TaskModel ReadId(int id = 0)
         {
             try
             {
@@ -97,7 +97,7 @@ namespace SisGT.Controllers
             return new TaskModel();
         }
 
-        internal bool Update(TaskModel task, int id = 0)
+        public bool Update(TaskModel task, int id = 0)
         {
             try
             {
@@ -127,7 +127,7 @@ namespace SisGT.Controllers
             return false;
         }
 
-        internal bool Delete(int id)
+        public bool Delete(int id)
         {
             try
             {

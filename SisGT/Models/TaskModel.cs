@@ -1,6 +1,6 @@
 ﻿namespace SisGT.Models
 {
-    internal class TaskModel
+    public class TaskModel
     {
         public int Id { get; set; } = 0;
         public string Title { get; set; }
